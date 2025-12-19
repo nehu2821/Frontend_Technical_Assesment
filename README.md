@@ -1,140 +1,212 @@
-# VectorShift: Frontend Technical Assessment
+🚀 VectorShift – Frontend Technical Assessment
 
-## Overview
+A modern node-based workflow builder inspired by VectorShift’s core platform.
+This project demonstrates clean frontend architecture, dynamic node abstraction, and seamless backend validation using a real-world pipeline/DAG model.
 
-This project is a technical assessment implementation that recreates core functionalities of VectorShift's main application. The focus was on building a node-based workflow builder with features like node abstraction, dynamic styling, and backend integration for pipeline validation. The implementation showcases modern web development practices and attention to user experience.
+The goal was not just to recreate functionality, but to deliver a scalable, intuitive, and production-ready experience with a strong focus on usability and maintainability.
 
-**Frontend:** [Live Site URL](https://vectorshift-task.vercel.app/)
+🌐 Live Demo & Resources
 
-**Code Repo:** [Repository URL](https://github.com/RutamBhagat/vectorshift_task)
+Frontend Live Site: https://vectorshift-task.vercel.app/
 
-## Demo Video
+Code Repository: https://github.com/nehu2821/Frontend_Technical_Assesment
 
-[Watch the Walkthrough](https://youtu.be/vURcGmZQdWk)
+Demo Walkthrough Video: Add Video Link
 
-## Key Features
+✨ Project Highlights
+🔗 Node-Based Workflow Builder
 
-- **Node Abstraction**: Implemented a flexible node system supporting various node types (Inputs, Outputs, LLMs, Text)
-- **Dynamic Text Node**: Created responsive text nodes with variable parsing and dynamic handle creation
-- **Interactive Canvas**: Built using ReactFlow for smooth node-based workflow creation
-- **Backend Integration**: FastAPI backend for pipeline validation and DAG verification
-- **Modern UI**: Styled using Tailwind CSS and shadcn/ui components
-- **Pipeline Validation**: Real-time feedback on pipeline structure and validity
+An interactive canvas that allows users to visually create and connect workflows using different node types—designed for clarity, flexibility, and performance.
 
-## Technologies Used
+🧩 Smart Node Abstraction
 
-- **Frontend Framework**: React.js
-- **Workflow Builder**: ReactFlow
-- **Styling**: 
-  - Tailwind CSS for utility-first styling
-  - shadcn/ui for component library
-- **Backend**: FastAPI for Python backend services
-- **Type Safety**: TypeScript for enhanced development
-- **State Management**: React Context API
-- **Deployment**: Vercel for frontend hosting
+A reusable base node architecture enables:
 
-## Implementation Details
+Easy creation of new node types
 
-### 1. Node Abstraction
-- Created a base node abstraction for common functionality
-- Implemented specialized node types (Input, Output, LLM, Text)
-- Added five custom nodes demonstrating abstraction flexibility
+Consistent behavior across nodes
 
-### 2. Text Node Features
-- Dynamic resizing based on content
-- Variable parsing with {{ variable }} syntax
-- Automatic handle creation for parsed variables
+Clean separation of logic and UI
 
-### 3. Pipeline Validation
-- Backend DAG validation
-- Node and edge counting
-- User-friendly response display
+Implemented node types include:
 
-## Getting Started
+Input Nodes
 
-Follow these steps to run the project locally.
+Output Nodes
 
-### Prerequisites
+LLM Nodes
 
-- Node.js 18 or higher
-- Python 3.8 or higher
-- npm or yarn package manager
-- pip
-- uvicorn
+Text Nodes
 
-### Frontend Setup
+Additional custom nodes to demonstrate extensibility
 
-1. **Clone and Install**
-```bash
+📝 Dynamic Text Node
+
+One of the standout features of the project:
+
+Automatically resizes based on content
+
+Parses variables using {{ variable }} syntax
+
+Dynamically generates input handles for each detected variable
+
+Updates connections in real time
+
+⚡ Real-Time Pipeline Validation
+
+Integrated with a FastAPI backend to:
+
+Validate Directed Acyclic Graph (DAG) structures
+
+Detect invalid pipelines
+
+Count nodes and edges
+
+Provide clear, user-friendly validation feedback
+
+🎨 Modern & Responsive UI
+
+Built with a clean design system using:
+
+Tailwind CSS for utility-first styling
+
+shadcn/ui for accessible, reusable components
+
+Smooth interactions powered by ReactFlow
+
+🛠 Tech Stack
+Frontend
+
+React.js – Core UI framework
+
+TypeScript – Type safety and maintainability
+
+ReactFlow – Node-based workflow canvas
+
+Tailwind CSS – Utility-first styling
+
+shadcn/ui – Component library
+
+React Context API – State management
+
+Backend
+
+FastAPI – Lightweight and high-performance backend
+
+Python – Pipeline validation logic
+
+DAG Algorithms – Graph validation and integrity checks
+
+Deployment
+
+Vercel – Frontend hosting
+
+⚙️ Implementation Breakdown
+1️⃣ Node Abstraction System
+
+Designed a base node structure for shared functionality
+
+Extended it to create specialized nodes
+
+Demonstrated scalability by adding multiple custom node types
+
+2️⃣ Advanced Text Node Logic
+
+Regex-based variable parser
+
+Dynamic handle generation
+
+State-driven UI updates for seamless user interaction
+
+3️⃣ Backend Validation Engine
+
+Validates graph correctness
+
+Prevents cyclic dependencies
+
+Returns structured, readable validation results to the frontend
+
+▶️ Getting Started
+Prerequisites
+
+Node.js v18+
+
+Python 3.8+
+
+npm or yarn
+
+pip
+
+uvicorn
+
+🔧 Frontend Setup
 git clone https://github.com/RutamBhagat/vectorshift_task
 cd frontend
 cp .env.example .env
 npm install
-```
-
-2. **Start Development Server**
-```bash
 npm start
-```
 
-### Backend Setup
-
-1. **Navigate to Backend Directory**
-```bash
+🧠 Backend Setup
 cd backend
-```
-
-2. **Install Python Dependencies**
-```bash
 pip install -r requirements.txt
-```
-
-3. **Start FastAPI Server**
-```bash
 uvicorn main:app --reload
-```
 
-## Challenges and Solutions
+🚧 Challenges & Solutions
+🧩 Node Abstraction
 
-1. **Node Abstraction**
-- Challenge: Creating a flexible yet maintainable node system
-- Solution: Implemented a base node class with specialized inheritance
+Challenge: Balancing flexibility with maintainability
+Solution: Introduced a base node class with specialized extensions
 
-2. **Dynamic Text Nodes**
-- Challenge: Handling variable parsing and dynamic handles
-- Solution: Created regex-based parser with React state management
+🔄 Dynamic Variable Handling
 
-3. **Backend Integration**
-- Challenge: Validating complex graph structures
-- Solution: Implemented efficient DAG validation algorithms
+Challenge: Parsing variables and updating handles dynamically
+Solution: Regex-based parsing combined with React state management
 
-## Optimizations
+🔐 Pipeline Validation
 
-1. **Performance**
-- Optimized ReactFlow rendering
-- Efficient state management
-- Minimized unnecessary re-renders
+Challenge: Ensuring correctness of complex node graphs
+Solution: Implemented efficient DAG validation logic on the backend
 
-2. **Code Quality**
-- Modular component architecture
-- Reusable styling patterns
-- Clear separation of concerns
+⚡ Optimizations & Best Practices
+Performance
 
-3. **User Experience**
-- Intuitive node interactions
-- Responsive design
-- Clear feedback mechanisms
+Optimized ReactFlow rendering
 
-## Outcome
+Reduced unnecessary re-renders
 
-The implementation successfully meets all assessment requirements while maintaining code quality and user experience. Key achievements include:
+Efficient state updates
 
-- Clean, abstracted node system
-- Responsive and intuitive UI
-- Efficient backend integration
-- Comprehensive pipeline validation
-- Modern styling implementation
+Code Quality
 
+Modular and reusable components
+
+Clear separation of concerns
+
+Consistent styling patterns
+
+User Experience
+
+Intuitive drag-and-drop interactions
+
+Responsive design
+
+Clear validation feedback
+
+🎯 Final Outcome
+
+This project successfully fulfills all assessment requirements while emphasizing clean architecture, scalability, and user experience.
+
+Key Achievements:
+
+✅ Robust and extensible node abstraction system
+
+✅ Dynamic and intelligent Text Node implementation
+
+✅ Seamless frontend–backend integration
+
+✅ Real-time pipeline validation
+
+✅ Modern, clean, and responsive UI
 # Screenshots
 
 ![0](https://github.com/user-attachments/assets/ea8464d2-580f-4a19-a263-504f148d93c7)
