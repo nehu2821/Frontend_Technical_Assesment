@@ -140,7 +140,7 @@ pip
 uvicorn
 
 🔧 Frontend Setup
-git clone https://github.com/RutamBhagat/vectorshift_task
+git clone https://github.com/nehu2821/Frontend_Technical_Assesment
 cd frontend
 cp .env.example .env
 npm install
