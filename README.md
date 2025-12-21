@@ -66,7 +66,7 @@ Follow these steps to run the project locally.
 
 1. **Clone and Install**
 ```bash
-git clone https://github.com/RutamBhagat/vectorshift_task
+git clone https://https://github.com/nehu2821/Frontend_Technical_Assesment
 cd frontend
 cp .env.example .env
 npm install
