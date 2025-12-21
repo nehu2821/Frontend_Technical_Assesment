@@ -8,10 +8,6 @@ This project is a technical assessment implementation that recreates core functi
 
 **Code Repo:** [Repository URL](https://github.com/nehu2821/Frontend_Technical_Assesment)
 
-## Demo Video
-
-[Watch the Walkthrough]( "C:\Users\Lenovo\Desktop\Neha_Singh_screenrecording .mp4")
-
 ## Key Features
 
 - **Node Abstraction**: Implemented a flexible node system supporting various node types (Inputs, Outputs, LLMs, Text)
